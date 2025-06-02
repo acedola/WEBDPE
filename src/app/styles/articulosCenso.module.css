@@ -1,0 +1,8 @@
+/* articulosCenso.module.css */
+.contenedor-informes a:hover {
+  color: blue;
+}
+
+.contenedor-informes {
+  color: #000
+}

@@ -1,0 +1,58 @@
+.anuariogrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);    
+    justify-items: center;    
+    margin-top: 20px;
+    row-gap: 50px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;        
+    padding: 120px;
+}
+
+.contenedorAnuario{
+    box-shadow: 5px 5px 20px var(--mid-gray);
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+    
+}
+
+.titulo-card-anuario {
+    font-size: var(--lg);
+    color: var(--light-blue);
+    font-weight: bold;
+    padding: 15px 15px;
+    padding-bottom: 0px;
+}
+
+
+/* Estilos específicos para pantallas pequeñas */
+@media (max-width: 768px){
+    .anuariogrid{
+        padding: 75px;
+        grid-template-columns: none;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+
+}
+
+/* Estilos específicos para notebooks (1025px - 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px){
+    .anuariogrid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
+
+/* Estilos específicos para pantallas tipo tablet */
+@media (min-width: 800px) and (max-width: 1000px){
+
+    .anuariogrid{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 35px;
+        column-gap: 20px;
+    }
+}
